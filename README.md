@@ -12,7 +12,7 @@ Inspired by [this video](https://youtu.be/3THLTQsrem0?si=78Qb_iuWX5MGSNpV), whic
 
 1. **Model Acquisition**
 
-   * I sourced a print of the 75-4-106 F5 part, obtained its dimensions, and modeled it in Fusion 360.
+   * I sourced a print of the 75-4-106 part, obtained its dimensions, and modeled it in Fusion 360.
    * Exported the model as an STL file for toolpath generation.
 
 2. **Toolpath Generation**
