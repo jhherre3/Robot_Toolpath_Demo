@@ -4,8 +4,14 @@
 
 
 ## Overview
+This project showcases a simulation-only workflow using RoboDK to generate and test robotic welding motion based on a 3D model. I used a 6-axis Universal Robot arm to simulate toolpath execution over a complex geometry derived from an STL file.
+The goal was to demonstrate an understanding of:
 
-A simulation-only workflow to generate and test robotic welding-style motion over STL-derived toolpaths using a 6-axis Universal Robot in RoboDK.
+Robotic arm kinematics and joint constraints
+G-code fundamentals and how robotic toolpaths relate to traditional CNC workflows
+STL slicing for layered deposition or path generation
+Tool orientation control for consistent welding simulation
+Offline programming principles common in industrial robot applications
 
 ## Inspiration
 
@@ -15,13 +21,13 @@ Inspired by [this video](https://youtu.be/3THLTQsrem0?si=78Qb_iuWX5MGSNpV), whic
 
 1. **Model Acquisition**
 
-   * I sourced a print of the 75-4-106 part, obtained its dimensions, and modeled it in Fusion 360.
+   * I sourced a print of the 75-4-106 part, obtained its dimensions, which can easily be modeled it in Fusion 360 resource provided stl for simplicity.
    * Exported the model as an STL file for toolpath generation.
 
 2. **Toolpath Generation**
 
    * Used the slicer application **Slic3r** to convert the STL into G-code representing layer-by-layer deposition paths.
-   * Imported the G-code into RoboDK to generate a robot-followable toolpath.
+   * Imported the G-code into RoboDK to generate a robot toolpath.
 
 3. **Robot & Tool Setup**
 
