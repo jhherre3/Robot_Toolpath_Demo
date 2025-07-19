@@ -1,4 +1,5 @@
 # Robot_Toolpath_Demo
+![Cobot Welding Setup](images/cobot-welding-setup2.png)
 
 ## Overview
 
