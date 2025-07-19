@@ -53,7 +53,6 @@ Inspired by [this video](https://youtu.be/3THLTQsrem0?si=78Qb_iuWX5MGSNpV), whic
 
 6. **Welding Config Planning**
 
-   * Simulated deposition direction and weld logic (arc-on/arc-off).
    * Planned process logic that could be implemented in real-world code.
 
 7. **Limitations**
