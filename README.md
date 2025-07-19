@@ -79,5 +79,5 @@ Inspired by [this video](https://youtu.be/3THLTQsrem0?si=78Qb_iuWX5MGSNpV), whic
 
 ## Notes
 
-This simulation project provides a strong foundation for real-world robotic welding or additive manufacturing. Leveraging RoboDK and a Universal Robot model allowed fast prototyping, toolpath testing, and motion analysis without requiring physical hardware.
+This simulation project provides a strong foundation for real-world robotic welding and additive manufacturing. Leveraging RoboDK and a Universal Robot model allowed fast prototyping, toolpath testing, and motion analysis without requiring physical hardware.
 
