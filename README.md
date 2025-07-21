@@ -45,6 +45,8 @@ Inspired by [this video](https://youtu.be/3THLTQsrem0?si=78Qb_iuWX5MGSNpV), whic
    * Calibrated a Tool Center Point (TCP) to represent a welding torch.
 
 4. **Motion Programming**
+   ![Toolpath Execution Animation](images/showcaseshelledgi.gif)
+   <p align="center"><i>RoboDK simulation of the parsed G-code shell toolpath using Python</i></p>
 
    * Assigned curve-following behavior to the robot.
    * Configured motion settings: orientation, travel speed, and retract distances.
