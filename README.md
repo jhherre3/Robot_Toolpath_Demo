@@ -1,4 +1,4 @@
-# Robot\_Toolpath\_Demo
+# Robot_Toolpath_Demo
 
 ![Cobot Welding Setup](images/cobot%20welding%20setup2.png)
 
@@ -34,7 +34,10 @@ Inspired by [this video](https://youtu.be/3THLTQsrem0?si=78Qb_iuWX5MGSNpV), whic
 2. **Toolpath Generation**
 
    * Used **Slic3r** to slice the STL file and generate G-code for layer-by-layer deposition.
-   * Imported the G-code into RoboDK and converted it into a robot-friendly path.
+   * Instead of using RoboDK’s built-in G-code to curve tool, I wrote a custom Python script using the RoboDK API to parse and execute the G-code line by line.
+   * This workaround allowed me to visualize and simulate complex G-code motion paths directly in RoboDK without relying on the licensed post-processor.
+
+   ![Shell G-code Path Result](images/shellgcodestlpath.png)
 
 3. **Robot & Tool Setup**
 
@@ -68,15 +71,14 @@ Inspired by [this video](https://youtu.be/3THLTQsrem0?si=78Qb_iuWX5MGSNpV), whic
 | --------------------- | ---------------------------------------------------- |
 | 3D Model Integration  | CAD modeling in Fusion 360, STL export               |
 | G-code Generation     | Used Slic3r to slice STL into additive-style G-code  |
-| G-code Interpretation | Converted G-code into curve-based robot paths        |
+| G-code Interpretation | Used Python + RoboDK API to simulate full paths      |
 | Robot Programming     | Offline simulation of Universal Robot with TCP setup |
 | Motion Control        | Path orientation, speed, and process planning        |
 | Process Planning      | Simulated WAAM-style robotic deposition              |
-| Licensing Awareness   | Operated effectively within RoboDK trial limitations |
+| Licensing Awareness   | Bypassed export limits by scripting toolpath control |
 
 ---
 
 ## Notes
 
-This simulation project provides a strong foundation for real-world robotic welding and additive manufacturing. Leveraging RoboDK and a Universal Robot model allowed fast prototyping, toolpath testing, and motion analysis without requiring physical hardware.
-
+This simulation project provides a strong foundation for real-world robotic welding and additive manufacturing. Leveraging RoboDK and a Universal Robot model allowed fast prototyping, toolpath testing, and motion analysis without requiring physical hardware. The addition of custom Python-based G-code parsing showcases a flexible and license-friendly approach to robotic toolpath execution.
